@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inicio</title>
+    <script src="paginanicial.js"></script>
+    <link rel="stylesheet" href="../css/Paginainicial.css">
+    <link href='https://fonts.googleapis.com/css?family=Bayon' rel='stylesheet'>
+</head>
+
+<body>
+   
+
+          <header>
+                <nav role="navigation">
+                    <div id="menuToggle">
+                     
+                      <input type="checkbox" />
+                      
+                    
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      
+                     
+                      <ul id="menu">
+                        <a href="pacotes.html"><li>Pacotes</li></a>
+                        <a href="paginainicial.html"><li>Pagina inicial</li></a>
+                        <a href="cadastro.html"><li>Cadastros</li></a>
+                        <a href="login.html"><li>Login</li></a>
+                      
+                        <a href="suporte.html"><li>Suporte</li></a>
+                      
+                      </ul>
+                    </div>
+                  </nav>
+             
+                
+            
+               <div class="menu">
+                <h1>Trailermarine</h1>
+           
+                   
+                    
+               
+                <div class="icon">
+                    <div class="submarino"><img src="../imagens/submarino.png" width="80px" height="70px"></div>
+                    <div class="conta"><a href="user.html"><img src="../imagens/icon.png" width="60px" height="50px"></a></div>
+           
+                </div> 
+            </div>
+          </header>
+            <div class="fora">
+     
+          
+              <div class="caixona">
+                <div class="moldura">
+                  <img class="imagem" id="imagem1" src="../imagens/submarino por fora.jpg" width="1000px" height="550px" >
+                  <img class="imagem" id="imagem2" src="../imagens/refeitorio.jpg" width="1000px" height="550px" >
+                
+                   <img class="imagem" id="imagem3" src="../imagens/quarto.jpeg" width="1000px" height="550px" >
+                    
+                   
+             
+                  </div>
+                  <br>imagens do submarino
+            
+              </div>
+          
+                          
+            </div>
+            <br><br><br>
+            <div class="sobre">
+              <h1>sobre nÓs<s></s></h1><br>
+              Se você sempre sonhou em explorar as profundezas do oceano e testemunhar a beleza incomparável das maravilhas subaquáticas, a TrailerMarine está aqui para transformar seu sonho em realidade! Somos uma empresa pioneira em viagens de submarino, oferecendo uma experiência única e inesquecível para os amantes da aventura e da natureza.
+              <br><br>
+              A TrailerMarine é mais do que uma simples empresa de turismo - somos uma janela para um mundo subaquático incrível e repleto de mistérios. Com uma equipe altamente treinada e uma frota de submarinos modernos e seguros, levamos você em jornadas subaquáticas de tirar o fôlego, proporcionando uma perspectiva totalmente nova do nosso planeta.
+              <br><br>
+              Nossos roteiros abrangem destinos deslumbrantes ao redor do globo, cuidadosamente selecionados para proporcionar uma variedade de paisagens subaquáticas espetaculares. Imagine nadar ao lado de coloridos corais, explorar recifes vibrantes, mergulhar em naufrágios históricos e encontrar criaturas marinhas fascinantes, como golfinhos, tartarugas e cardumes exuberantes.
+              <br><br>
+              A segurança é nossa prioridade número um. Nossos submarinos são projetados com a mais recente tecnologia de ponta e passam por rigorosas inspeções e manutenções regulares. Além disso, nossa equipe de especialistas em mergulho e resgate está sempre presente para garantir que você esteja seguro e confortável durante toda a sua jornada submarina.
+              <br><br>
+              Na TrailerMarine, acreditamos na sustentabilidade e na preservação dos oceanos. Trabalhamos em estreita colaboração com organizações ambientais e locais para promover práticas de turismo responsável e minimizar nosso impacto nos ecossistemas marinhos. Também incentivamos a conscientização e a educação ambiental, para que cada um de nossos viajantes possa se tornar um defensor dos oceanos.
+              <br><br>
+              Nossos pacotes de viagem são personalizados para atender aos interesses e necessidades individuais de cada cliente. Seja um explorador solo em busca de aventura, uma família em busca de uma experiência educativa ou um casal em uma escapada romântica, temos opções de viagem que se adequam a todos os perfis.
+              <br><br>
+              A TrailerMarine convida você a embarcar em uma jornada inigualável pelos mares. Explore as profundezas azuis, descubra segredos ocultos e crie memórias duradouras em uma experiência verdadeiramente extraordinária. Entre em contato conosco hoje mesmo e deixe-nos levá-lo a uma aventura subaquática que você jamais esquecerá!
+              <br><br>
+               <img src="imagens/logosla.png">
+            </div>
+            
+           
+          
+            </body>
+            <script src="jquery-3.6.4.min.js">
+              // BAIXE ESTE ARQUIVO EM:  https://jquery.com/download/
+              // Clique com o botão direito em Download compressed e salve na mesma pasta.
+          </script>
+          
+          <script>
+          
+                  setInterval(carrossel, 3000); // EXECUTA A FUNÇÃO "carrossel" A CADA 3 SEGUNDOS
+          
+                  var IMAGEM=0;
+                  function ESCONDER()
+                  {
+                      $("#imagem4").animate({opacity:'0'},1000);     
+                  }
+                  function MOSTRAR()
+                  {
+                      $("#imagem4").animate({opacity:'300'},1000);   
+                  }
+          
+                  function carrossel()
+                  {
+                      IMAGEM = IMAGEM + 1;
+                      if(IMAGEM==1)
+                      {
+                          $("#imagem1").animate({opacity:'1'},5000);
+                          $("#imagem2").animate({opacity:'0'},1000);
+                          $("#imagem3").animate({opacity:'0'},1000);         
+                      }
+                      if(IMAGEM==2)
+                      {
+                          $("#imagem1").animate({opacity:'0'},1000);
+                          $("#imagem2").animate({opacity:'1'},5000);
+                          $("#imagem3").animate({opacity:'0'},1000);         
+                      }
+                      if(IMAGEM==3)
+                      {
+                          $("#imagem1").animate({opacity:'0'},1000);
+                          $("#imagem2").animate({opacity:'0'},1000);
+                          $("#imagem3").animate({opacity:'1'},5000); 
+                          IMAGEM=0;
+                      }
+          
+                  }
+          </script>
+
+       
+          <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+          <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>
