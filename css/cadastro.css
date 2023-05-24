@@ -96,9 +96,7 @@ h1:hover{
 height: 80px;
 width: 80px;
 cursor: pointer;
-border-right: 3px solid rgb(30, 125, 180);
-border-bottom: 3px solid rgb(30, 125, 180);
- border-radius: 20px;
+
 }
 .submarino{
   transition: 0.5;
@@ -113,9 +111,7 @@ border-bottom: 3px solid rgb(30, 125, 180);
 }
 .conta:hover{
   
- border-right: 3px solid rgb(30, 125, 180);
- border-bottom: 3px solid rgb(30, 125, 180);
-  border-radius: 20px;
+
   cursor: pointer;
 
 }

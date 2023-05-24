@@ -46,7 +46,7 @@
                     
                
                 <div class="icon">
-                    <div class="submarino"><img src="../imagens/submarino.png" width="80px" height="70px"></div>
+                  <div class="submarino"><a href="carrinho.html"><img src="../imagens/submarino.png" width="80px" height="70px"></a></div> 
                     <div class="conta"><a href="user.html"><img src="../imagens/icon.png" width="60px" height="50px"></a></div>
            
                 </div> 
@@ -72,7 +72,8 @@
             </div>
             <br><br><br>
             <div class="sobre">
-              <h1>sobre nÓs<s></s></h1><br>
+              <div class="que">
+              <h2>sobre nos</h2><br>
               Se você sempre sonhou em explorar as profundezas do oceano e testemunhar a beleza incomparável das maravilhas subaquáticas, a TrailerMarine está aqui para transformar seu sonho em realidade! Somos uma empresa pioneira em viagens de submarino, oferecendo uma experiência única e inesquecível para os amantes da aventura e da natureza.
               <br><br>
               A TrailerMarine é mais do que uma simples empresa de turismo - somos uma janela para um mundo subaquático incrível e repleto de mistérios. Com uma equipe altamente treinada e uma frota de submarinos modernos e seguros, levamos você em jornadas subaquáticas de tirar o fôlego, proporcionando uma perspectiva totalmente nova do nosso planeta.
@@ -87,6 +88,7 @@
               <br><br>
               A TrailerMarine convida você a embarcar em uma jornada inigualável pelos mares. Explore as profundezas azuis, descubra segredos ocultos e crie memórias duradouras em uma experiência verdadeiramente extraordinária. Entre em contato conosco hoje mesmo e deixe-nos levá-lo a uma aventura subaquática que você jamais esquecerá!
               <br><br>
+              </div>
                <img src="imagens/logosla.png">
             </div>
             
@@ -117,21 +119,21 @@
                       IMAGEM = IMAGEM + 1;
                       if(IMAGEM==1)
                       {
-                          $("#imagem1").animate({opacity:'1'},5000);
+                          $("#imagem1").animate({opacity:'1'},1000);
                           $("#imagem2").animate({opacity:'0'},1000);
                           $("#imagem3").animate({opacity:'0'},1000);         
                       }
                       if(IMAGEM==2)
                       {
                           $("#imagem1").animate({opacity:'0'},1000);
-                          $("#imagem2").animate({opacity:'1'},5000);
+                          $("#imagem2").animate({opacity:'1'},1000);
                           $("#imagem3").animate({opacity:'0'},1000);         
                       }
                       if(IMAGEM==3)
                       {
                           $("#imagem1").animate({opacity:'0'},1000);
                           $("#imagem2").animate({opacity:'0'},1000);
-                          $("#imagem3").animate({opacity:'1'},5000); 
+                          $("#imagem3").animate({opacity:'1'},1000); 
                           IMAGEM=0;
                       }
           

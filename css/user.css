@@ -6,12 +6,12 @@ body{
     align-items: center;
    flex-direction: column;
     width: 100vw;
-    height: 150vh;
+    height: 100vh;
     box-sizing: border-box;
     background-image: url("../imagens/fundo.jpg");
     background-position: center ;
     background-size: 130%;
-    overflow: hidden;
+    overflow-x: hidden;
     background-color: rgb(150, 221, 221);
 
     
@@ -60,6 +60,7 @@ h2{
     align-content: center;
     justify-content: center;
     flex: auto;
+    
 }
 
 h3{
@@ -98,9 +99,7 @@ h1:hover{
 height: 80px;
 width: 80px;
 cursor: pointer;
-border-right: 3px solid rgb(30, 125, 180);
-border-bottom: 3px solid rgb(30, 125, 180);
- border-radius: 20px;
+
 }
 .submarino{
   transition: 0.5;
@@ -115,9 +114,7 @@ border-bottom: 3px solid rgb(30, 125, 180);
 }
 .conta:hover{
   
- border-right: 3px solid rgb(30, 125, 180);
- border-bottom: 3px solid rgb(30, 125, 180);
-  border-radius: 20px;
+ 
   cursor: pointer;
 
 }

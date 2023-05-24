@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conta</title>
+    <link rel="stylesheet" href="../css/carrinho.css">
+    <link href='https://fonts.googleapis.com/css?family=Bayon' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav role="navigation">
+            <div id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <a href="pacotes.html"><li>Pacotes</li></a>
+                    <a href="paginainicial.html"><li>Página Inicial</li></a>
+                    <a href="cadastro.html"><li>Cadastros</li></a>
+                    <a href="login.html"><li>Login</li></a>
+                    <a href="suporte.html"><li>Suporte</li></a>
+                </ul>
+            </div>
+        </nav>
+        <div class="menu">
+            <h1><a href="paginainicial.html">Trailermarine</a></h1>
+            <div class="submarino"></div>
+            <div class="icon">
+                <div class="submarino"><a href="carrinho.html"><img src="../imagens/submarino.png" width="80px" height="70px"></a></div>
+                <div class="conta"><a href="user.html"><img src="../imagens/icon.png" width="60px" height="50px"></a></div>
+            </div> 
+        </div>
+    </header>
+
+    <div class="caixona"> 
+        <h2>Carrinho</h2>
+        <div class="main">
+            <section>
+                <!-- Listagem do carrinho -->
+                <div class="item">
+                    <div class="item-image">
+                        <img src="caminho-da-imagem.jpg" alt="Nome do Produto">
+                    </div>
+                    <div class="item-details">
+                        <h3>Nome do Produto</h3>
+                        <p>Descrição do Produto</p>
+                        <p>R$ 9.99</p>
+                    </div>
+                    <div class="item-actions">
+                        <button class="remove-button">Remover</button>
+                    </div>
+                </div>
+            </section>
+            <aside>
+                <!-- Total do carrinho -->
+                <div class="total">
+                    <p>Total: R$ 9.99</p>
+                    <button class="checkout-button">Finalizar Compra</button>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
