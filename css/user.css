@@ -60,6 +60,7 @@ h2{
     align-content: center;
     justify-content: center;
     flex: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
 }
 
@@ -72,6 +73,7 @@ h3{
     align-content: center;
     justify-content: center;
     flex: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .icone{
  text-decoration: none;

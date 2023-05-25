@@ -11,7 +11,7 @@ body{
     background-image: url("../imagens/fundo.jpg");
     background-position: center ;
     background-size: 130%;
-    overflow: hidden;
+    overflow-x: hidden;
     background-color: rgb(150, 221, 221);
 
     
@@ -69,6 +69,7 @@ h2{
     align-content: center;
     justify-content: center;
     flex: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 
@@ -159,6 +160,8 @@ cursor: pointer;
         display: flex;
         align-items: left;
         text-align: left;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding: 70px;
     }
 .voltar{
    height: 10%;
