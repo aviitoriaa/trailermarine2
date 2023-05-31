@@ -65,12 +65,16 @@
             <div class="caixona"> 
                 <div class="minicaixa">
                 <div class="login">LOGIN</div>
-                    
-                    <div class="caixa"> <input type="text" class="caixalarga" id="e-mail" placeholder="E-MAIL"></div>
-                    <div class="caixa"><input type="password" class="caixalarga2" id="senha" placeholder="SENHA"></div>
-                  <div class="registro">Não tem cadastro? <br> <br> </div>
+
+                <form action="crude.php" method="post"> 
+                    <div class="caixa"> <input type="text" name="email" class="caixalarga" id="e-mail" placeholder="E-MAIL"></div>
+                   <div class="caixa"><input type="password" name="senha" class="caixalarga2" id="senha" placeholder="SENHA"></div>
+                  </form> 
+
+                   <div class="registro">Não tem cadastro? <br> <br> </div>
                   <a href="cadastro.html"><div class="registre-se">Registre-se aqui</div></a> 
-                 <button class="Bt">Entrar</button>  
+                  
+                 <button type="submit" class="Bt">Entrar</button>  
                 
                 </div>
             </div>
