@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/cadastro.css">
+    <link rel="stylesheet" href="css/cadastro.css">
     <link href='https://fonts.googleapis.com/css?family=Bayon' rel='stylesheet'>
     <title>Cadastro</title>
 
 </head>
+
+
 <body>
     <header>
         <nav role="navigation">
@@ -50,8 +52,8 @@
         <h1><a href="paginainicial.html">Trailermarine</a></h1>
             <div class="submarino"></div>
             <div class="icon">
-                <div class="submarino"><a href="carrinho.html"><img src="../imagens/submarino.png" width="80px" height="70px"></a></div>
-                <div class="conta"><a href="user.html"><img src="../imagens/icon.png" width="60px" height="50px"></a></div>
+                <div class="submarino"><a href="carrinho.html"><img src="imagens/submarino.png" width="80px" height="70px"></a></div>
+                <div class="conta"><a href="user.html"><img src="imagens/icon.png" width="60px" height="50px"></a></div>
    
             </div> 
         </div>
@@ -59,21 +61,25 @@
 
     <div class="caixona"> 
         <div class="minicaixa">
-        <div class="Cadastro">Cadastro</div>
-                Preencha seus dados:
-                </select>
-            <form action="crude.php" method="post">
-                <br> <br>
-                <div class="caixa"><input type="text" name="nome" class="caixalarga" id="nome" placeholder="Nome"></div>
-                <br> <br>
-                <div class="caixa"><input maxlength="11" name="senha" type="password" onkeypress="return onlynumber();" class="caixalarga" id="senha" placeholder="senha"></div>
-                <br> <br>
-                <div class="caixa"><input type="text" class="caixalarga" id="EMAIL" name="email" placeholder="Email"></div>
-                <br> <br>
-                <div class="botoes">
-                <button align="right" class="BT1">CADASTRAR </button>     <button align="center" class="BT2">LIMPAR</button> </div>
-            </form>
-        </fieldset>
+        <h3>Cadastro </h3>
+        Preencha seus dados:
+        <form action="crude.php" method="post">
+    
+              <div class="caixa2">
+               
+                    <input class="caixalarga" type="text" placeholder="NOME" name="nome" id="nome">
+                    <br> <br>
+                    <input class="caixalarga" type="email"placeholder="E-MAIL" name="email">
+                    <br> <br><br>
+                    
+                    
+                    <input class="caixalarga" size="9" type="password" placeholder="SENHA" name="senha">
+                    <br><br><br>
+                    
+              </div>
+                    <input class="inserir" type="submit" value="INSERIR" name="inserir">
+                </form>
+            </div>
 </body>
 <script src="cadastro.js"></script>
 </html>

@@ -6,9 +6,9 @@
 
     if(isset($_POST["inserir"])) {
         $comando = $pdo->prepare("INSERT INTO usuario_data (nome, email, senha) VALUES('$nome', '$email', '$senha')");
-        $resultado = $comando->execute();
-        header("Location: cadastrofoda.html");
-    }
 
+        $resultado = $comando->execute();
+        header("Location: cadastro.html");
+    }
 
 ?>
