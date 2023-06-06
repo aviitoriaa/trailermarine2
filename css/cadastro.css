@@ -44,7 +44,7 @@ header
  {
     width: 100%;
     height: 8vh ;
-    background-color:rgb(21, 32, 65);
+    background-color:rgba(21, 32, 65, 0.685);
     display:flex;
     padding: 20px;
     color: rgb(224, 242, 245);
@@ -123,11 +123,11 @@ cursor: pointer;
     padding-top: 40px;
     justify-content: flex-start;
     align-items: center;
-    background-color: rgb(21, 32, 65);
+    background-color: rgba(21, 32, 65, 0.61);
     flex-direction: column;
     border-radius: 10px;
     color: #cdcdcd;
-    
+
 
 }
     .minicaixa{
@@ -203,6 +203,17 @@ border: 0px;
     border-radius: 20px;
     font-size: 25px;
     font-family: 'Bayon';
+}
+.registre-se{
+
+
+    color: rgb(81, 200, 216);
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     text-decoration: underline;
+     display: flex;
+     flex-direction: column;
+     
 }
 body
 {

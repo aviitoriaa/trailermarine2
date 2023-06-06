@@ -80,7 +80,7 @@ cursor: pointer;
     padding-top: 40px;
     justify-content: flex-start;
     align-items: center;
-    background-color: rgb(21, 32, 65);
+    background-color: rgba(21, 32, 65, 0.753);
     flex-direction: column;
     border-radius: 10px;
   
