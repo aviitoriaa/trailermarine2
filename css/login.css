@@ -193,23 +193,32 @@ h1{
     margin-left: 20px;
 }
 .Bt{
-  position: relative;
+  position: absolute;
   
 
   width: 100px;
     height: 2rem;
-    border-radius: 10%;
+    border-radius: 20px;
    border: 0px;
-  background-color: rgb(81, 200, 216);
   align-items: center;
   justify-items: center;
   align-content: center;
+  background: rgb(81, 200, 216);
+	color: black;
  
 }
-button:hover{
-    background-color: aliceblue;
-    cursor: pointer;
-}   
+.Bt:hover {
+	background: #afd8fa;
+	color: #fff;
+	border: 1px solid #eee;
+	border-radius: 20px;
+	text-shadow: none;
+}
+.right
+{
+  display: flex;
+  justify-content: start;
+}
 
 /*
  * Made by Erik Terwan
