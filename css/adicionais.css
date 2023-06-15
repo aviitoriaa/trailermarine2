@@ -64,7 +64,7 @@ margin-top: 20px;
 fieldset
 {
   width: 500px;
-  height: 600px;
+  height: 450px;
   background-color:rgb(21, 32, 65);
   border-radius: 30px;
   border: 1px;
@@ -101,26 +101,24 @@ fieldset
 }
 .cima 
 {
-  width: 100%;
+  position: relative;
+  top: 30px;
+  width: 80%;
+  height: 100px;
   display: flex;
   flex-direction: row;
   justify-content: start;
+  justify-items: start;
+  align-items: center;
+  align-content: center;
 }
 .voltar{
   font-family: 'Alfa Slab one'; font-size: 40px;
   color: rgb(21, 32, 65);
   display: flex;
   justify-content: start;
-  width: 600px;
+  width: 375px;
 
-}
-.voltar1
-{
-  margin-left: 25px;
-  font-family: 'Alfa Slab one'; font-size: 40px;
-  color: rgb(21, 32, 65);
-  display: flex;
-  justify-content: start;
 }
 .botao
 {
