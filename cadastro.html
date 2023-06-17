@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/cadastro.css">
+    <link rel="stylesheet" href="css/cadastro copy.css">
     <link href='https://fonts.googleapis.com/css?family=Bayon' rel='stylesheet'>
     <title>Cadastro</title>
 
@@ -18,58 +18,53 @@
         
     
        <div class="menu">
-        <h1><a href="paginainicial.html">Trailermarine</a></h1>
+        <h2>Trailermarine</h2>
             <div class="submarino"></div>
             
-            <div class="icon">
-                <div class="submarino"><a href="carrinho.html"><img src="imagens/submarino.png" width="80px" height="70px"></a></div>
-                <div class="conta"><a href="user.html"><img src="imagens/icon.png" width="60px" height="50px"></a></div>
-   
-            </div> 
+          
         </div>
     </header>
-
-    <div class="caixona">
-        <div class="minicaixa">
-            <h3>Cadastro </h3>
-            Preencha seus dados:
-            <br><br><br>    
-            <form action="crude.php" method="post">
+    <div class="container" >
+        <form action="crude.php" method="post">
+        <h2>Cadastro</h2> 
+          
+    <p> 
+      <label for="nome">Seu nome</label>
+      <input id="nome" name="nome" required="required" class="retangulos" type="text" placeholder="Luiz Augusto" />
+    </p>
     
-                <div class="caixa2">
-               
-                    <div class="row">
-                        <input class="caixalarga"size="5" type="text" placeholder="NOME" name="nome" id="nome">
-                        <br> <br>
-                        <input class="caixalarga" size="5" type="email"placeholder="E-MAIL" name="email" >
-                        <br> <br>
-                    </div>
+    <p> 
+      <label for="email">Seu e-mail</label>
+      <input id="email" name="email" required="required" type="email" placeholder="contato@htmlecsspro.com"/> 
+    </p>
+    
+    <p> 
+      <label for="senha">sua senha</label>
+      <input id="senha" name="senha" required="required" type="password" placeholder="151........"/> 
+    </p>
+    
+    <p> 
+      <label for="telefone">seu telefone</label>
+      <input id="telefone" name="telefone" required="required" type="telefone" placeholder="47 9........"/> 
+    </p>
 
-                    <div class="row">
-                        <input class="caixalarga" size="5" type="password" placeholder="SENHA" name="senha" >
-                        <br><br>
-                        <input class="caixalarga" size="8" type="tel" placeholder="TELEFONE" name="telefone" >
-                        <br><br>
-                    </div>
-                    
-                    <div class="row">
-                        <input class="caixalarga" size="5" type="tel" placeholder="CPF" name="cpf" >
-                        <br><br>
-                        <input class="caixalarga" size="5" type="password" placeholder=" CONFIRMAR SENHA" name="senha" > 
-                        <br><br>     
-                    </div> 
+    <p> 
+      <label for="cpf">Seu cpf</label>
+      <input id="cpf" name="cpf" required="required" type="" placeholder="1234"/>
+    </p>
+    
+    <p> 
+      <input  type="submit" value="INSERIR" name="inserir">
+    </p>
+    
+    <p class="link">  
+      Já tem conta?
+      <a href="#paralogin"> Ir para Login </a>
+    </p> 
+   </form>
 
-                    
+</div>
 
-                </div>
-                
-                <input class="inserir" type="submit" value="INSERIR" name="inserir">
-            </form>
-                <br><br><br><br>
-                <div class="registro">ja tem cadastro?<br> <br> </div>
-                  <a href="login.html"><div class="registre-se">Entrar</div></a> 
-        </div>
-    </div>
 </body>
 <script src="cadastro.js"></script>
 </html>

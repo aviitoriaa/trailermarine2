@@ -13,19 +13,19 @@ body{
     align-items: center;
    flex-direction: column;
     width: 100vw;
-    height: 100vh;
+    height: 120vh;
     box-sizing: border-box;
     background-image: url("../imagens/fundo.jpg");
     background-position: center ;
     background-size: 130%;
- 
+   overflow-x: hidden;
     background-color: rgb(150, 221, 221);
 }
 header
  {
     width: 100%;
     height: 8vh ;
-    background-color:rgba(21, 32, 65, 0.685);
+    background-color:rgba(21, 32, 65, 0.61);
     display:flex;
     padding: 20px;
     color: rgb(224, 242, 245);
@@ -48,6 +48,7 @@ header
 
 
 
+
 }
 .icon{
    width: 200px;
@@ -55,11 +56,13 @@ header
   flex-direction: row;
   justify-content: space-around;
   margin-top: 20px;
+
+ 
 }
-h1:hover{
-  height: 130%;
-  cursor: pointer;
- }
+
+
+
+
 .submarino:hover{
 height: 80px;
 width: 80px;
@@ -72,14 +75,15 @@ cursor: pointer;
 
 .container 
 {
-  width: 35%;
+  width: 33%;
   height: 100%;
   position: absolute;
-  top: 25%;
-  background-color:rgba(21, 32, 65, 0.685);
+  top: 20%;
+  background-color: rgba(21, 32, 65, 0.61);
   align-items: center;
+  border-radius: 5px ;
+  Box-decoration-break: slice;-webkit-box-decoration-break: slice;box-shadow: 8px 8px 10px 0 #131414, -5px -5px 5px 0 rgb(18, 34, 37), 5px 5px 15px 0 rgb(35, 57, 59);
 }
-
 
 
 
@@ -97,9 +101,7 @@ cursor: pointer;
 
 
 /* esconde as ancoras da tela */
-a.links{
-  display: none;
-}
+
 
 /* content que contem os formulários */
 .content{
@@ -111,22 +113,25 @@ a.links{
 /* formatando o cabeçalho dos formulários */
 h2{
   font-size: 48px;
-  color: #066a75;
+  color:rgb(81, 200, 216);
   padding: 10px 0;
   font-family: Arial,sans-serif;
   font-weight: bold;
   text-align: center;
   padding-bottom: 30px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 h2:after{
-  content: ' ';
+  content: '';
   display: block;
   width: 100%;
   height: 2px;
   margin-top: 10px;
   background: -webkit-linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background: linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
 }
+
 
 p{
   margin-bottom:15px;
@@ -137,7 +142,7 @@ p:first-child{
   margin: 0px;
 }
 label{
-  color: #405c60;
+  color: #f1fdff;
   position: relative;
 }
 
@@ -149,7 +154,7 @@ label{
 }
 input:-moz-placeholder,
 textarea:-moz-placeholder{
-  color: #bebcbc;
+  color: #bebcbcfd;
   font-style: italic;
 } 
 input {
@@ -198,13 +203,14 @@ input[type="submit"]:hover{
   position: absolute;
   background: #e1eaeb;
   color: #7f7c7c;
-  left: 0px;
+  left: 14px;
   height: 20px;
-  width: 440px;
+  width: 80%;
   padding: 17px 30px 20px 30px;
   font-size: 16px;
   text-align: right;
   border-top: 1px solid #dbe5e8;
+  
 
   -webkit-border-radius: 0 0  5px 5px;
   border-radius: 0 0  5px 5px;
@@ -215,7 +221,7 @@ input[type="submit"]:hover{
   padding: 6px;
   color: rgb(29, 162, 193);
   margin-left: 10px;
-  border: 1px solid #cbd518;
+  border: 1px solid #a3b6a6;
 
   -webkit-border-radius: 4px;
   border-radius: 4px;  
@@ -357,147 +363,4 @@ input[type="submit"]:hover{
 
 
 
-
-
-#menuToggle
- {
-   display: block;
-   position: relative;
-   top: 12px;
-   left: 50px;
-  
-   z-index: 1;
-   
-   -webkit-user-select: none;
-   user-select: none;
- }
- 
- #menuToggle a
- {
-   text-decoration: none;
-   color: rgb(81, 200, 216);
-   
-   transition: color 0.3s ease;
- }
- 
- #menuToggle a:hover
- {
-   color:    rgb(255, 255, 255);
- }
- 
- 
- #menuToggle input
- {
-   display: block;
-   width: 40px;
-   height: 32px;
-   position: absolute;
-   top: -7px;
-   left: -5px;
-   
-   cursor: pointer;
-   
-   opacity: 0; /* hide this */
-   z-index: 2; /* and place it over the hamburger */
-   
-   -webkit-touch-callout: none;
- }
- 
- /*
-  * Just a quick hamburger
-  */
- #menuToggle span
- {
-   display: block;
-   width: 33px;
-   height: 4px;
-   margin-bottom: 5px;
-   position: relative;
-   
-   background: rgb(81, 200, 216);
-   border-radius: 3px;
-   
-   z-index: 1;
-   
-   transform-origin: 4px 0px;
-   
-   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-               opacity 0.55s ease;
- }
- 
- #menuToggle span:first-child
- {
-   transform-origin: 0% 0%;
- }
- 
- #menuToggle span:nth-last-child(2)
- {
-   transform-origin: 0% 100%;
- }
- 
- /* 
-  * Transform all the slices of hamburger
-  * into a crossmark.
-  */
- #menuToggle input:checked ~ span
- {
-   opacity: 1;
-   transform: rotate(45deg) translate(-2px, -1px);
-   background:rgb(81, 200, 216);
- }
- 
- /*
-  * But let's hide the middle one.
-  */
- #menuToggle input:checked ~ span:nth-last-child(3)
- {
-   opacity: 0;
-   transform: rotate(0deg) scale(0.2, 0.2);
- }
- 
- /*
-  * Ohyeah and the last one should go the other direction
-  */
- #menuToggle input:checked ~ span:nth-last-child(2)
- {
-   transform: rotate(-45deg) translate(0, -1px);
- }
- 
- /*
-  * Make this absolute positioned
-  * at the top left of the screen
-  */
- #menu
- {
-   position: absolute;
-   width: 300px;
-   margin: -100px 0 0 -50px;
-   padding: 50px;
-   padding-top: 125px;
-   
-   background:  rgb(21, 32, 65);
-   list-style-type: none;
-   -webkit-font-smoothing: antialiased;
-   /* to stop flickering of text in safari */
-   
-   transform-origin: 0% 0%;
-   transform: translate(-100%, 0);
-   
-   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
- }
- 
- #menu li
- {
-   padding: 10px 0;
-   font-size: 22px;
- }
- 
- /*
-  * And let's slide it in from the left
-  */
- #menuToggle input:checked ~ ul
- {
-   transform: none;
- }
 
