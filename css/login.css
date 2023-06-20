@@ -6,9 +6,9 @@ body{
     align-items: center;
    flex-direction: column;
     width: 100vw;
-    height: 100vh;
+    height: 120vh;
     box-sizing: border-box;
-    background-image: url("../imagens/fundo.jpg");
+    background-image: url("../imagens/fundozao.jpg");
     background-position: center ;
     background-size: 130%;
     overflow-x: hidden;
@@ -22,7 +22,7 @@ body{
  {
     width: 100%;
     height: 8vh ;
-    background-color:rgb(21, 32, 65);
+    background-color:rgba(15, 48, 56, 0.726);
     display:flex;
     padding: 20px;
     color: rgb(224, 242, 245);
@@ -33,214 +33,298 @@ body{
     justify-content: space-between ;
     margin: 2px;   
 }
-h1:hover{
-  height: 130%;
-  cursor: pointer;
- }
-
- a{
-  
-  
-  cursor: pointer;
-  text-decoration: none;
-  color:rgb(81, 200, 216) ;}
 
 
 
-
-.submarino:hover{
-height: 80px;
-width: 80px;
-cursor: pointer;
-
-}
-.submarino{
-  transition: 0.5;
-}
-
-
-
-
-.conta{
-  transition: 0.5;
-  top: 80px;
-}
-.conta:hover{
-  
-
-  cursor: pointer;
-
-}
-
-
-.caixona{
-    width: 500px;
-    height: 550px;
-    display: flex;
-    padding-top: 40px;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: rgba(21, 32, 65, 0.753);
-    flex-direction: column;
-    border-radius: 10px;
-  
-    
-
-}
-    .minicaixa{
-        width:450px ;
-        height: 500px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        justify-items: center;
-        align-items: center;
-        align-content: center;
-    }
-
-
-.caixa{
-   width: 90%;
-  height: 300%;
-   background-color:  rgb(81, 200, 216);
-   border-radius: 25px;
-   display: flex;
-   justify-content: center;
-   justify-items: center;
-   align-items: center;
-   align-content: center;
-}
-
-.login
+.container 
 {
-    color: rgb(81, 200, 216);
-    font-size: 2rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  
-}
-.caixalarga
-{
-width: 100%;
-height: 100%;
-background-color: rgb(81, 200, 216);
-border-radius: 25px;
-text-align: center;
-font-size: 20px;
-border: 0px;
-}
-.caixalarga2
-{
-width: 100%;
-height: 100%;
-background-color: rgb(81, 200, 216);
-border-radius: 25px;
-text-align: center;
-font-size: 20px;
-border: 0px;
-}
-::-webkit-input-placeholder
-{
-    color: rgb(21, 32, 65);
-   
-}
-.registro
-{
-    color: rgb(81, 200, 216);
-    font-size: 20px;
- 
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-.registre-se
-{
-    color: rgb(81, 200, 216);
-    font-size: 20px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-     text-decoration: underline;
-     display: flex;
-     flex-direction: column;
-     
-
-}
-hover .registre-se{ 
-  background-color: antiquewhite;
-}
-
-h1{
-    font-size: 3rem;
-    padding: 0%;
-    color: rgb(81, 200, 216);
-}
-.menu{
-    
-    display: flex;
-    align-items: center;
-     height: 8vh;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 80%  ;
-
-
-
-}
-.icon{
-     width: 200px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-.tres{
-    margin-left: 20px;
-}
-.Bt{
+  width: 33%;
+  height: 80%;
   position: absolute;
+  top: 20%;
+  background-color: rgba(21, 32, 65, 0.61);
+  align-items: center;
+  border-radius: 5px ;
+  Box-decoration-break: slice;-webkit-box-decoration-break: slice;box-shadow: 8px 8px 10px 0 #131414, -5px -5px 5px 0 rgb(18, 34, 37), 5px 5px 15px 0 rgb(35, 57, 59);
+}
+
+
+
+.menu{
+  
+  display: flex;
+  align-items: center;
+   height: 8vh;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%  ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* esconde as ancoras da tela */
+
+
+/* content que contem os formulários */
+.content{
+  width: 500px;
+  margin: 0px auto;
+  position: relative;	
+}
+
+/* formatando o cabeçalho dos formulários */
+h2{
+  font-size: 48px;
+  color:rgb(81, 200, 216);
+  padding: 10px 0;
+  font-family: Arial,sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 30px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h2:after{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin-top: 10px;
+  background: -webkit-linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background: linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
+}
+
+
+p{
+  margin-bottom:15px;
+  margin:10px;
+  padding: 10px;
+}
+p:first-child{
+  margin: 0px;
+}
+label{
+  color: #f1fdff;
+  position: relative;
+}
+
+/**** advanced input styling ****/
+/* placeholder */
+::-webkit-input-placeholder  {
+  color: #bebcbc; 
+  font-style: italic;
+}
+input:-moz-placeholder,
+textarea:-moz-placeholder{
+  color: #bebcbcfd;
+  font-style: italic;
+} 
+input {
+  outline: none;
+}
+
+input:not([type="checkbox"]){
+  width: 95%;
+  margin-top: 4px;
+  padding: 10px;	
+  border: 1px solid #b2b2b2;
+  
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+  box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+  
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+/*estilo do botão submit */
+input[type="submit"]{
+  width: 100%!important;
+  cursor: pointer;	
+  background: #3d9db3;
+  padding: 8px 5px;
+  color: #fff;
+  font-size: 20px;	
+  border: 1px solid #fff;	
+  margin-bottom: 10px;	
+  text-shadow: 0 1px 1px #333;
+  
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  
+  transition: all 0.2s linear;
+}
+input[type="submit"]:hover{
+  background: #4ab3c6;
+}
+
+/*marcando os links para mudar de um formulário para outro */
+.link{
+  position: absolute;
+  background: #e1eaeb00;
+  color: #fffefe;
+  left: 14px;
+  height: 40px;
+  width: 88%;
+  display:flex ;
+  align-items: center;
+  font-size: 16px;
+  text-align: right;
+ 
   
 
-  width: 100px;
-    height: 2rem;
-    border-radius: 20px;
-   border: 0px;
-  align-items: center;
-  justify-items: center;
-  align-content: center;
-  background: rgb(81, 200, 216);
-	color: black;
- 
+  -webkit-border-radius: 0 0  5px 5px;
+  border-radius: 0 0  5px 5px;
 }
-.Bt:hover {
-	background: #afd8fa;
-	color: #fff;
-	border: 1px solid #eee;
-	border-radius: 20px;
-	text-shadow: none;
+.link a {
+  font-weight: bold;
+  background: #f7f8f1;
+  padding: 6px;
+  color: rgb(29, 162, 193);
+  margin-left: 10px;
+  border: 1px solid #a3b6a6;
+
+  -webkit-border-radius: 4px;
+  border-radius: 4px;  
+
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s  linear;
 }
-.right
+.link a:hover {
+  color: #39bfd7;
+  background: #f7f7f7;
+  border: 1px solid #4ab3c6;
+}
+
+/* estilos para para ambos os formulários */
+#cadastro
 {
-  display: flex;
-  justify-content: start;
+  position: absolute;
+  top: 0px;
+  width: 88%;	
+  padding: 18px 6% 60px 6%;
+  margin: 0 0 35px 0;
+  background: rgb(247, 247, 247);
+  border: 1px solid rgba(147, 184, 189,0.8);
+  
+  -webkit-box-shadow: 5px;
+  border-radius: 5px;
+  
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
 }
 
-/*
- * Made by Erik Terwan
- * 24th of November 2015
- * MIT License
- *
- *
- * If you are thinking of using this in
- * production code, beware of the browser
- * prefixes.
- */
+#paracadastro:target ~ .content #cadastro{
+  z-index: 2;
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
 
- /*body
- {
-   margin: 0;
-   padding: 0;
-   
-   /* make it look decent enough */
+  -webkit-animation-delay: .1s;
+  animation-delay: .1s;
+}
+#registro:target,
+ .content #cadastro{
+  -webkit-animation-name: fadeOutLeft;
+  animation-name: fadeOutLeft;
+}
 
-  /* color: #cdcdcd;
-   font-family: "Avenir Next", "Avenir", sans-serif;
- }*/
+/*fadeInLeft*/
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/*fadeOutLeft*/
+@-webkit-keyframes fadeOutLeft {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+  }
+}
+
+@keyframes fadeOutLeft {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
  #menuToggle
  {
