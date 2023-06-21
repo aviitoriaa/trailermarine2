@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adicionais</title>
+
+  <link rel="stylesheet" href="css/adicionais.css">
+  <link href='https://fonts.googleapis.com/css?family=Bayon' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Alfa Slab One' rel='stylesheet'>
+</head>
+<body>
+  <header>
+    <nav role="navigation">
+        <div id="menuToggle">
+          <!--
+          A fake / hidden checkbox is used as click reciever,
+          so you can use the :checked selector on it.
+          -->
+          <input type="checkbox" />
+          
+          <!--
+          Some spans to act as a hamburger.
+          
+          They are acting like a real hamburger,
+          not that McDonalds stuff.
+          -->
+          <span></span>
+          <span></span>
+          <span></span>
+          
+          <!--
+          Too bad the menu has to be inside of the button
+          but hey, it's pure CSS magic.
+          -->
+          <ul id="menu">
+                    <a href="pacotes.html"><li>Pacotes</li></a>
+                    <a href="paginainicial.html"><li>Pagina inicial</li></a>
+                    <a href="cadastro.html"><li>Cadastros</li></a>
+                    <a href="login.html"><li>Login</li></a>
+                    <a href="Final.html"><li>Final</li></a>
+                    <a href="suporte.html"><li>Suporte</li></a>
+          </ul>
+        </div>
+      </nav>
+ 
+    
+
+   <div class="menu">
+        <h1>Trailermarine</h1>
+        <div class="submarino"></div>
+        <div class="icon">
+          <img src="imagens/submarino.png" width="70px" height="60px">
+          <img src="imagens/icon.png" width="60px" height="50px">
+        </div> 
+    </div>  
+  </header>
+
+
+  <div class="cima">
+    <div class="voltar"> 
+      <button onclick="voltar();" class="botao"><img src="imagens/back.png" width="48px" height="48px"></button>
+    </div>
+    <div class="selecionado"> Pacote selecionado:      BALI </div>
+  </div>
+  <br><br>
+
+
+  <div class="container">
+    <br> <br>
+    <div class="adicionais"> Adicionais:</div>
+  
+    <fieldset>
+        <br>
+        <div class="a1">
+          <label class="container2">
+            <input type="checkbox" name="check" checked="checked" />
+            Comidas - R$ 200,00
+            <div class="checkmark"></div>
+          </label>
+        </div>
+        <br>
+        <div class="a1">
+          <label class="container2">
+            <input type="checkbox" name="check" checked="checked" />
+            Bebidas - R$ 350,00
+            <div class="checkmark"></div>
+          </label>
+        </div>
+        <br>
+        <div class="a1">
+          <label class="container2">
+            <input type="checkbox" name="check" checked="checked" />
+            Roupa de cama - R$ 100,00
+            <div class="checkmark"></div>
+          </label>
+        </div>
+        <br>
+        <div class="a1">
+          <label class="container2">
+            <input type="checkbox" name="check" checked="checked" />
+            Toalhas de banho - R$ 100,00
+            <div class="checkmark"></div>
+          </label>
+        </div>
+        <br>
+        <div class="a1">
+          <label class="container2">
+            <input type="checkbox" name="check" checked="checked" />
+            Itens Higiene - R$ 100,00
+            <div class="checkmark"></div>
+          </label>
+        </div>
+        <br><br><br>
+        <div class="confirma">
+          CONFIRMAR:
+          <button onclick="confirmar();" class="confirmar">
+            <img src="imagens/send.png">
+
+          </button>
+        </div>
+    </fieldset>
+  </div>
+
+  
+</body>
+<script>
+  function confirmar() 
+  {
+    location.href="http://127.0.0.1:5500/Final.html"
+  }
+  function voltar() 
+  {
+    location.href="http://127.0.0.1:5500/pacotes.html"
+  }
+</script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>
