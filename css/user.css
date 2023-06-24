@@ -296,6 +296,7 @@ a{
  #menuToggle span:nth-last-child(2)
  {
    transform-origin: 0% 100%;
+   
  }
  
  /* 
@@ -333,12 +334,13 @@ a{
  #menu
  {
    position: absolute;
-   width: 300px;
+   width: 200px;
    margin: -100px 0 0 -50px;
    padding: 50px;
    padding-top: 125px;
-   
-   background:  rgb(21, 32, 65);
+  
+    border-radius:10px ;
+   background:rgba(15, 48, 56, 0.818);
    list-style-type: none;
    -webkit-font-smoothing: antialiased;
    /* to stop flickering of text in safari */
@@ -353,6 +355,7 @@ a{
  {
    padding: 10px 0;
    font-size: 22px;
+   
  }
  
  /*
@@ -361,6 +364,7 @@ a{
  #menuToggle input:checked ~ ul
  {
    transform: none;
+   Box-decoration-break: slice;-webkit-box-decoration-break: slice;box-shadow: 8px 8px 10px 0 #131414, -5px -5px 5px 0 rgb(18, 34, 37), 5px 5px 15px 0 rgb(35, 57, 59);
  }
  
     

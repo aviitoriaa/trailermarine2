@@ -282,4 +282,5 @@ cursor: pointer;
  #menuToggle input:checked ~ ul
  {
    transform: none;
+   Box-decoration-break: slice;-webkit-box-decoration-break: slice;box-shadow: 8px 8px 10px 0 #131414, -5px -5px 5px 0 rgb(18, 34, 37), 5px 5px 15px 0 rgb(35, 57, 59);
  }
