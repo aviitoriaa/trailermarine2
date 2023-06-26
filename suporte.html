@@ -59,9 +59,10 @@
         <div class="caixona"> FALE CONOSCO: 
             <input type="text" class= "mensagem" id="mensagem"> 
             <button onclick="Enviar();">Enviar</button>
-            <div id="resposta">  </div>
+           
         </div>
-
+        <br><br><br>
+        <div class="resposta" id="resposta">  </div>
     </div>
     
 </body>
@@ -96,20 +97,36 @@
   // Função executada quando a variável (tópico) no servidor receber uma mensagem:
   function MensagemRecebida(message) {
       resposta.innerHTML += "<br><br>" + message.payloadString;
+      texto=message.payloadString;
+      expressao= /http/g;
+      teste = expressao.test(texto)
+      console.log(teste)
+      if(teste==false)
+      {
+        resposta.innerHTML += texto + "<br>"
+      }
   }
 
   function Enviar()
   {
     texto = mensagem.value;
+    //expressao=/[0-9]/g;
+   // r=expressao.test(texto)
+    if (texto !="") //&& r==false
 
-    message = new Paho.MQTT.Message(texto);
-    message.destinationName = topico;
-    client.send(message);
+    {
+
+      texto = " "  + texto
+        mensagem.value=""
+
+        message = new Paho.MQTT.Message(texto);
+        message.destinationName = topico;
+        client.send(message);
+    }
+   
+   
   }
-  function VoltarPagina();
-  {
-    window.history.back();
-  }
+
 
 </script>
 
