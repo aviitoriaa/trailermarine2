@@ -55,17 +55,55 @@ margin-top: 20px;
   width: 80%;
   height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
   justify-items: center;
   align-items: center;
   align-self: center;
 }
+.infopacote
+{
+  width: 800px;
+  height: 450px;
+  background-color: rgba(15, 48, 56, 0.726);
+  border-radius: 30px;
+  border: 1px;
+  border-color: rgb(81, 200, 216);
+  color: white;
+  font-size: 25px;
+  align-items: center;
+  align-content: center;
+  overflow-y: scroll;
+  padding-left: 20px;
+  padding-top: 20px;
+  overflow-x: hidden;
+ 
+  
+   
+}
+html ::-webkit-scrollbar {
+  width: 20px;
+  border-radius: 10px;
+}
+html ::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background: rgba(63, 131, 148, 0.726);
+}
+html ::-webkit-scrollbar-track {
+  background: rgba(15, 48, 56, 0.726);
+}
+html::-webkit-resizer{
+  height: 20px;
+  border-radius: 10px;
+}
+.texto{
+
+}
 fieldset
 {
   width: 500px;
   height: 450px;
-  background-color:rgb(21, 32, 65);
+  background-color: rgba(15, 48, 56, 0.726);
   border-radius: 30px;
   border: 1px;
   border-color: rgb(81, 200, 216);
@@ -76,7 +114,7 @@ fieldset
 }
 .confirmar
 {
-  background-color: rgb(21, 32, 65);
+  background-color: rgba(15, 48, 56, 0.726);
   border: 0px;
   border-radius: 5px;
   cursor: pointer;
@@ -348,4 +386,5 @@ fieldset
  #menuToggle input:checked ~ ul
  {
    transform: none;
+   Box-decoration-break: slice;-webkit-box-decoration-break: slice;box-shadow: 8px 8px 10px 0 #131414, -5px -5px 5px 0 rgb(18, 34, 37), 5px 5px 15px 0 rgb(35, 57, 59);
  }
