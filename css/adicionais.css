@@ -114,7 +114,7 @@ fieldset
 }
 .confirmar
 {
-  background-color: rgba(15, 48, 56, 0.726);
+  background-color: rgba(15, 56, 48, 0);
   border: 0px;
   border-radius: 5px;
   cursor: pointer;
@@ -126,6 +126,7 @@ fieldset
   width: 80%;
   flex-direction: row;
   justify-content: start;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .adicionais
 {
@@ -189,6 +190,7 @@ fieldset
   align-items: center;
   align-content: center;
   gap: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* Create a custom checkbox */
@@ -271,7 +273,17 @@ fieldset
  {
    color:    rgb(255, 255, 255);
  }
- 
+ .valorfinal{
+  color: white;
+  border: none;
+  background-color:rgba(15, 48, 56, 0) ;
+
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30px;
+ }
+ .total{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
  
  #menuToggle input
  {
