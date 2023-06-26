@@ -273,12 +273,12 @@ border-radius: 10px;
  #menu
  {
    position: absolute;
-   width: 300px;
+   width: 200px;
    margin: -100px 0 0 -50px;
    padding: 50px;
    padding-top: 125px;
    
-   background:  rgb(21, 32, 65);
+   background:  rgba(15, 48, 56, 0.726);
    list-style-type: none;
    -webkit-font-smoothing: antialiased;
    /* to stop flickering of text in safari */
