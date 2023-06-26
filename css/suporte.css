@@ -9,7 +9,7 @@ body
     width: 100vw;
     height: 100vh;
     box-sizing: border-box;
-    background-image: url("../imagens/fundo.jpg");
+    background-image: url("../imagens/fundozao.jpg");
     background-position: center ;
     background-size: 130%;
     overflow: hidden;
@@ -19,7 +19,7 @@ header
 {
   width: 100%;
   height: 8vh ;
-  background-color:rgb(21, 32, 65);
+  background-color:rgba(15, 48, 56, 0.726);
   display:flex;
   padding: 20px;
   color: rgb(224, 242, 245);
@@ -108,15 +108,18 @@ cursor: pointer;
 .caixona
 {
     width: 600px;
-    height: 300px;
+    height: 250px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: rgb(21, 32, 65);
+    background-color:rgba(15, 48, 56, 0.726);
     flex-direction: column;
     border-radius: 10px;
     color: #96DDDD;
     font-family: 'bayon'; font-size: 40px;
+    Box-decoration-break: slice;-webkit-box-decoration-break: slice;box-shadow: 8px 8px 10px 0 #131414, -5px -5px 5px 0 rgb(18, 34, 37), 5px 5px 15px 0 rgb(35, 57, 59);
+
+    
 
 }
 .mensagem
@@ -141,7 +144,23 @@ cursor: pointer;
     font-size: 15px;
     font-family: 'Bayon';
     color: white;
+    
 }
+.resposta{
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  font-size: 18px;
+  width: 50%;
+  height: 50%;
+  overflow-y: scroll;
+  padding-left: 20px;
+  background-color: rgba(15, 48, 56, 0.726);
+  color: white;
+  Box-decoration-break: slice;-webkit-box-decoration-break: slice;box-shadow: 8px 8px 10px 0 #131414, -5px -5px 5px 0 rgb(18, 34, 37), 5px 5px 15px 0 rgb(35, 57, 59);
+border-radius: 10px;
+}
+
 #menuToggle
  {
    display: block;
@@ -254,12 +273,12 @@ cursor: pointer;
  #menu
  {
    position: absolute;
-   width: 300px;
+   width: 200px;
    margin: -100px 0 0 -50px;
    padding: 50px;
    padding-top: 125px;
    
-   background:  rgb(21, 32, 65);
+   background:  rgba(15, 48, 56, 0.726);
    list-style-type: none;
    -webkit-font-smoothing: antialiased;
    /* to stop flickering of text in safari */
