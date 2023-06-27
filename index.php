@@ -60,15 +60,17 @@
 
     <?php
 
-        $items = array(['nome'=>'Pacote 1 - Bali','item'=>'imagens/pacote1.avif', 'preco'=>'200']  
-            ['nome'=>'Pacote 2 - Maldivas','item'=>'imagens/pacote2.jfif', 'preco'=>'300']
-            ['nome'=>'Pacote 3 - Caribe','item'=>'imagens/pacote3.jfif', 'preco'=>'400']
-            ['nome'=>'Pacote 4 - Havaí','item'=>'imagens/pacote3.jfif', 'preco'=>'500']);
+$items = array(
+    ['nome' => 'Pacote 1 - Bali', 'item' => 'imagens/pacote1.avif', 'preco' => '200'],
+    ['nome' => 'Pacote 2 - Maldivas', 'item' => 'imagens/pacote2.jfif', 'preco' => '300'],
+    ['nome' => 'Pacote 3 - Caribe', 'item' => 'imagens/pacote3.jfif', 'preco' => '400'],
+    ['nome' => 'Pacote 4 - Havaí', 'item' => 'imagens/pacote 4.jfif', 'preco' => '500']
+);
 
         foreach ($items as $key => $value) {
     ?>
         <div class="produto">
-            <img src="<?php echo $value['imagem'] ?>" />
+            <img src="<?php echo $value['item']; ?>" />
             <a href="?adicionar=<?php echo $key  ?>">Adicionar ao carrinho</a>
         </div><!--produto-->
 
